@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="admin.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 mt-4">
+                <!-- Picture Section -->
+                <img class="pic" src="https://urnabios.com/wp-content/uploads/2015/04/Ten-of-The-Most-Incredible-and-Inspiring-Trees-In-The-World.jpg" alt="Image" class="img-fluid">
+            </div>
+            <div class="col-md-4 mt-4">
+                <!-- Form Section -->
+                <h2 class="text-center">Admin Login</h2>
+                <form action="/admin/login" method="post">
+                    <div class="form-group">
+                        <label for="userid">User ID</label>
+                        <input type="text" id="userid" name="userid" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password" class="form-control" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Login</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
