@@ -4,8 +4,8 @@ body {
 }
 
 .container {
-    width: auto;
-    height: 100px; /* Increase width to accommodate both form and image */
+    width: 100%;
+    height: auto; /* Increase width to accommodate both form and image */
     margin: 10px;
     background-color: #989cae;
     padding: 20px;
@@ -61,14 +61,4 @@ button[type="submit"]:hover {
     background-color: #45a049;
 }
 
-.pic {
-    width: 100%; /* Set width for the image container */
-    height: auto; /* Maintain aspect ratio */
-    position: relative;
-}
 
-.pic img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* Maintain aspect ratio and cover the container */
-}

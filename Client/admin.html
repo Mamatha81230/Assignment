@@ -6,28 +6,56 @@
     <title>Login</title>
     <link rel="stylesheet" href="admin.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        .custom-container {
+            margin: 0 auto;
+        }
+
+        .pic {
+            width: 50%;
+            height: 150%;
+            padding: 3px;
+            margin-left: 60%;
+        }
+
+        .custom-card {
+            width: 40%;
+            height: 150%;
+            max-width: 500px; /* Adjust the max-width as per your preference */
+            margin: 0;
+        }
+
+        .center-form {
+            display: flex;
+            justify-content: center;
+        }
+    </style>
 </head>
 <body>
-    <div class="container">
+    <div class="custom-container mt-4">
         <div class="row">
-            <div class="col-md-6 mt-4">
+            <div class="col-md-6">
                 <!-- Picture Section -->
                 <img class="pic" src="https://urnabios.com/wp-content/uploads/2015/04/Ten-of-The-Most-Incredible-and-Inspiring-Trees-In-The-World.jpg" alt="Image" class="img-fluid">
             </div>
-            <div class="col-md-4 mt-4">
+            <div class="col-md-6">
                 <!-- Form Section -->
-                <h2 class="text-center">Admin Login</h2>
-                <form action="/admin/login" method="post">
-                    <div class="form-group">
-                        <label for="userid">User ID</label>
-                        <input type="text" id="userid" name="userid" class="form-control" required>
+                <div class="card custom-card">
+                    <h2 class="card-header text-center">Admin Login</h2>
+                    <div class="card-body center-form">
+                        <form action="/admin/login" method="post">
+                            <div class="form-group">
+                                <label for="userid">User ID</label>
+                                <input type="text" id="userid" name="userid" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="password">Password</label>
+                                <input type="password" id="password" name="password" class="form-control" required>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block">Login</button>
+                        </form>
                     </div>
-                    <div class="form-group">
-                        <label for="password">Password</label>
-                        <input type="password" id="password" name="password" class="form-control" required>
-                    </div>
-                    <button type="submit" class="btn btn-primary btn-block">Login</button>
-                </form>
+                </div>
             </div>
         </div>
     </div>
